@@ -1,6 +1,5 @@
 <?php 
-
-require_once('location: ../config/settings.php');
+session_start();
 
 ?>
 <!DOCTYPE html>
@@ -18,7 +17,8 @@ require_once('location: ../config/settings.php');
 <body>
 
 
- <h1> <?php echo $nome; ?></h1>
+ <h1> Seja bem vindo, <?php echo $_SESSION['nome'] ?></h1> <br/>
+ <h2><?php echo $_SESSION['nome'] ?>, Desejs confirmar sua presença? </h2>
 
     
 </body>
