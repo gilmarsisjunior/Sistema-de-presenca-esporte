@@ -1,11 +1,15 @@
 <?php 
-session_start();
+if (!isset($_SESSION)) {//Verificar se a sessão não já está aberta.
+    session_start();
+  }
 require_once('dbconfig.php');
 
 //pega credenciais
+
 $login = $_POST['login'];
 $senha = $_POST['senha'];
-$sessao = $_SESSION['usuario'] = $login;
+$_SESSION['usuario'] = $login;
+
 
 
 //valida user
@@ -15,8 +19,14 @@ $fetch = mysqli_fetch_row ($conectaDB);
 $decodeSenha = $fetch[2];
 $verificaSenha = password_verify ($senha ,$decodeSenha );
 if ($verificaSenha) {
-    echo ("<a href = ../views/painel.php> olá </a>");
+    
+    header('location: ../views/painel.php');
 }
-else echo "Usuário não autênticado";
+else {
+    header('location: ../views/cadastro.html');
+}
+
+//seleciona codigo
+
 
 ?>

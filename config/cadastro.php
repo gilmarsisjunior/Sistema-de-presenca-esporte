@@ -13,7 +13,7 @@ $done = substr($hashCodigo1, 1, 15);
 $sql = "INSERT INTO lista_user (login, senha, codigo) VALUES ('$login', '$hash', '$done')";
 
 if(mysqli_query($connect, $sql)){
-    echo "funcionando";
+    header('location: ../views/login.html');
 }
 else {
     echo "não funcionou";
