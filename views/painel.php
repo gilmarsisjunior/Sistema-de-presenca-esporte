@@ -16,7 +16,7 @@ require_once('../config/codigo.php');
 <body> 
     <h1><?php echo 'Seja bem vindo, '. $_SESSION['usuario'] ; ?></h1>
     <h3>Seu código é:</h3> <input type="text" value="<?php echo $codigo; ?>">
-    <a href=""><?php echo 'sair'; session_destroy();?></a>
+    <a href=""><?php echo 'sair'; session_destroy()  ;?></a>
     
 </body>
 </html>
