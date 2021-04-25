@@ -12,11 +12,18 @@ require_once('../config/codigo.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../style/stylepainel.css">
 </head>
 <body> 
-    <h1><?php echo 'Seja bem vindo, '. $_SESSION['usuario'] ; ?></h1>
-    <h3>Seu código é:</h3> <input type="text" value="<?php echo $codigo; ?>">
-    <a href=""><?php echo 'sair'; session_destroy()  ;?></a>
-    
+
+<div class="posiciona-nome">
+<h1><?php echo 'Seja bem vindo, <br/> '. $_SESSION['usuario'] ; ?></h1> 
+
+</div>
+    <div class="posiciona">
+     
+    <h3>Seu código</h3> <input type="text" value="<?php echo $codigo; ?>">
+    <a href=""><?php echo 'sair'; session_destroy()?></a>
+</div>  
 </body>
 </html>
