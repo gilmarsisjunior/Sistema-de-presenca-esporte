@@ -1,25 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: 'Zen Dots', cursive;
 }
 body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    position: relative;    
+    background-color: rgb(255, 255, 255);
+    position: relative;   
+    background-image: url('../views/4054966.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+    
 }
 .apresentacao {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
 }
 .apresentacao h1 {
     color: white;
+    text-shadow: 2px 2px rgb(102, 248, 34);
 }
 p {
     color: white;
+    
 }
 .posiciona{
     width: 100%;
@@ -31,31 +38,32 @@ p {
 .opcao1 {
     width: 20%;
     height: 20%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-
 }
 .opcao2{
     width: 20%;
-    height: 20%;
-    background-color: red;
-    display: flex;
-    align-items: center;
-
+    height: 20%;   
 }
 
 .botao {
     font-size: 4vh;
     text-align: center;
+    color: rgb(47, 0, 255);
+    font-style: italic;
+    box-shadow: 1px 1px 4px 2px;
 }
-.input{
-    position:absolute; 
-    width: 60%;
-    height: 60%;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    background-color: turquoise;
-    display: none;
+.botao2 {
+    font-size: 4vh;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-style: italic; 
+    box-shadow: 1px 1px 4px 2px;
+}
+a {
+    text-decoration: none;
+}
+.opcao1 h1, .opcao2 h1 {
+    margin-top:10%;
+}
+.logar {
+    color: rgb(58, 255, 8);
 }

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Zen Dots', cursive;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;   
+    background-image: url('../views/4054966.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.posiciona-form {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.posiciona-form form input {
+    padding: 10px;
+}
+.botao {
+    color: rgb(255, 254, 254);
+    background-color: rgba(245, 245, 245, 0.3);
+}
+
+.posiciona-div {
+    text-align: center;
+}
+.posiciona-div h3 {
+    color: rgba(93, 255, 29, 1);
+
+    
+}
